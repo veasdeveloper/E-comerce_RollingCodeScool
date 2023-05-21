@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/detalle-producto.css" />
+    <!--Estilos de Bootsrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Registro de Contacto</title>
+  </head>
+  <body>
+    <!-- CONTACTO -->
+    <div class="container ">
+      <div class="row">
+        <!--aca va el logo-->
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 logoElectro">
+          <img src="/assets/img/electroShop2.png" alt="logo de Electroshop" class="img-contacto" />
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <h2>Regístrese</h2>
+          <form>
+           
+            <div class="mb-3">
+              <label for="nombre" class="form-label"  >Nombre y apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                aria-describedby=""
+                maxlength="50" 
+                minlength="3" 
+                required
+                placeholder="Nombre y apellido"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="domicilio" class="form-label">Domicilio</label>
+              <input
+                type="text"
+                class="form-control"
+                id="domicilio"
+                aria-describedby="emailHelp"
+                placeholder="Domicilio"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="cp" class="form-label">Código postal</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cp"
+                aria-describedby="emailHelp"
+                placeholder="Código postal"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="telefono" class="form-label"
+                >Teléfono</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono"
+                placeholder="Teléfono"
+                pattern="^(\+?54)?(9)?[1-9]\d{8}$"
+                aria-describedby="Teléfono"
+                maxlength="10"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="usuario" class="form-label">Nombre de usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                id="usuario"
+                aria-describedby="emailHelp"
+                placeholder="Nombre de usuario"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" minlength="8" maxlength="50"  placeholder="Contraseña" required>
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="password2" class="form-label">Repita su contraseña</label>
+              <input type="password" class="form-control" id="password2" placeholder="Repita su contraseña" required>
+            </div>
+
+            <br />
+            <button type="submit" class="btn btn-primary form-control">
+              Enviar
+            </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--estas lineas son las conecciones a bootstarp  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
